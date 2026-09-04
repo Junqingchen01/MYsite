@@ -1,6 +1,6 @@
 # Junqing Chen (陈俊清) - 个人档案与求职信息库 (Profile & Career Data)
 
-> **创建说明**：本文档整合并更新了 `myinfo.pdf`、`certidao.pdf`、`中国留学网认证.jpg` 以及最新求职需求，作为个人网站（CV / Portfolio）所有文案与数据的基准文件。
+> **创建说明**：本文档整合并更新了 `myinfo.pdf`、`certidao.pdf`、`images/中国留学网认证.jpg` 以及最新求职需求，作为个人网站（CV / Portfolio）所有文案与数据的基准文件。
 
 ---
 
@@ -48,7 +48,7 @@
    * **时间**：2021 – 2024
    * **官方成绩单与双重认证**：
      * 葡萄牙波尔图理工学院官方成绩认证：归档于 `certidao.pdf`
-     * 中国教育部留学服务中心国(境)外学历学位认证书：归档于 `中国留学网认证.jpg`
+     * 中国教育部留学服务中心国(境)外学历学位认证书：归档于 `images/中国留学网认证.jpg`
    * **核心代表性课程与高分成果**：
      * **Final Project / Work Placement**：毕业设计与实习 (15/20, 23 ECTS)
      * **Mobile and Ubiquitous Computing**：移动与普适计算 (15/20)
