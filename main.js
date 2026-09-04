@@ -231,14 +231,85 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ------------------------------------------------------------------------
-    // 4. 导航栏随滚动自动激活当前高亮项 (ScrollSpy)
+    // 4. 一键明暗主题切换系统 (Dark / Light Mode Toggle)
+    // ------------------------------------------------------------------------
+    const themeToggleBtn = document.getElementById('theme-toggle-btn');
+
+    /**
+     * 应用指定主题 ('dark' | 'light')
+     * @param {string} theme 目标主题
+     */
+    function applyTheme(theme) {
+        if (theme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+            document.documentElement.removeAttribute('data-theme');
+        }
+        try {
+            localStorage.setItem('user_theme_preference', theme);
+        } catch (e) {}
+    }
+
+    /**
+     * 切换明暗主题
+     */
+    function toggleTheme() {
+        const isCurrentDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        const targetTheme = isCurrentDark ? 'light' : 'dark';
+        applyTheme(targetTheme);
+    }
+
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', toggleTheme);
+    }
+
+    // 初始化主题：优先读取本地记忆，次选系统深色偏好
+    function initTheme() {
+        let savedTheme = null;
+        try {
+            savedTheme = localStorage.getItem('user_theme_preference');
+        } catch (e) {}
+
+        if (savedTheme === 'dark' || savedTheme === 'light') {
+            applyTheme(savedTheme);
+            return;
+        }
+
+        // 系统暗色模式偏好检测
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            applyTheme('dark');
+        } else {
+            applyTheme('light');
+        }
+    }
+
+    initTheme();
+
+    // ------------------------------------------------------------------------
+    // 5. 页面平滑滚动与双向导航高亮联动 (Top Nav & Floating Dot Nav ScrollSpy)
     // ------------------------------------------------------------------------
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('nav a.nav-link');
+    const dotItems = document.querySelectorAll('.floating-dot-nav .dot-item');
 
-    window.addEventListener('scroll', () => {
+    // 竖向点状导航点击事件：平滑滚动到目标模块
+    dotItems.forEach((dot) => {
+        dot.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = dot.getAttribute('data-section');
+            const targetEl = document.getElementById(targetId);
+            if (targetEl) {
+                targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    /**
+     * 同步更新顶部导航栏与右侧竖向点状导航的高亮状态
+     */
+    function syncActiveNav() {
         let currentSectionId = '';
-        const scrollPosition = window.scrollY + 120; // 偏移顶部导航栏高度
+        const scrollPosition = window.scrollY + 140; // 偏移顶部导航栏高度
 
         sections.forEach((section) => {
             const sectionTop = section.offsetTop;
@@ -248,7 +319,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
+        // 页面在顶部时默认激活第一项
+        if (!currentSectionId && window.scrollY < 120) {
+            currentSectionId = 'about';
+        }
+
         if (currentSectionId) {
+            // 同步顶部水平导航
             navLinks.forEach((link) => {
                 const href = link.getAttribute('href');
                 if (href === `#${currentSectionId}`) {
@@ -257,6 +334,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     link.classList.remove('active');
                 }
             });
+
+            // 同步右侧竖向点状导航 (常态变小，当前视口模块亮起)
+            dotItems.forEach((dot) => {
+                const section = dot.getAttribute('data-section');
+                if (section === currentSectionId) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
         }
-    });
+    }
+
+    window.addEventListener('scroll', syncActiveNav, { passive: true });
+    syncActiveNav(); // 页面初次加载执行一次
 });

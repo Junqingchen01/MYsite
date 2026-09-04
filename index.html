@@ -22,7 +22,7 @@
                     <span data-i18n="status_available">求职中 (实习 / 全职 · 欧洲 / 中国 / 远程)</span>
                 </div>
             </div>
-            
+
             <!-- 导航菜单 -->
             <nav>
                 <a href="#about" class="nav-link active" data-i18n="nav_about">关于</a> •
@@ -32,8 +32,20 @@
                 <a href="#contact" class="nav-link" id="nav-contact-link" data-i18n="nav_contact">联系我</a>
             </nav>
 
-            <!-- 右侧控制区：语言切换器 + 联络按钮 -->
+            <!-- 右侧控制区：明暗主题切换 + 社交链接 + 语言切换器 + 联络按钮 -->
             <div class="header-right-actions">
+                <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="切换明暗主题" title="切换明/暗主题">
+                    <span class="theme-icon sun-icon">☀️</span>
+                    <span class="theme-icon moon-icon">🌙</span>
+                </button>
+                <div class="header-social-group">
+                    <a href="https://github.com/Junqingchen01" target="_blank" rel="noopener noreferrer" class="header-social-btn" title="GitHub 主页" aria-label="GitHub">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/chen-junqing-6358022a5/" target="_blank" rel="noopener noreferrer" class="header-social-btn" title="LinkedIn 主页" aria-label="LinkedIn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                </div>
                 <div class="lang-switcher" role="group" aria-label="Language Selector">
                     <button class="lang-btn active" data-lang="zh" title="切换为中文">中</button>
                     <button class="lang-btn" data-lang="en" title="Switch to English">EN</button>
@@ -66,9 +78,23 @@
                     具备“用户体验与交互原型 ➔ 前端交互 ➔ 后端 API 与数据链路 ➔ 容器化部署”的全链路交付能力。
                 </p>
                 <div class="hero-tags">
-                    <span class="hero-tag" data-i18n="hero_tag_loc">📍 葡萄牙 Viana do Castelo / 中国</span>
+                    <span class="hero-tag tag-origin" data-i18n="hero_tag_origin">🇨🇳 籍贯：中国福建</span>
+                    <span class="hero-tag" data-i18n="hero_tag_loc">📍 葡萄牙 Viana do Castelo </span>
                     <span class="hero-tag" data-i18n="hero_tag_roles">🎯 全栈 / 后端 / 前端 / Web交互</span>
                     <span class="hero-tag" data-i18n="hero_tag_lang">🌐 中 (母语) / 英 (Fluent) / 葡 (B1)</span>
+                </div>
+                <div class="hero-actions-row">
+                    <a href="./myinfo.pdf" target="_blank" download="Junqing_Chen_CV.pdf" class="btn-hero-resume" data-i18n="btn_download_resume">
+                        📄 下载标准简历 (PDF)
+                    </a>
+                    <a href="https://github.com/Junqingchen01" target="_blank" rel="noopener noreferrer" class="btn-hero-social" title="GitHub 主页">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/chen-junqing-6358022a5/" target="_blank" rel="noopener noreferrer" class="btn-hero-social" title="LinkedIn 主页">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        <span>LinkedIn</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -95,12 +121,26 @@
                 <div class="project-content-grid">
                     <div class="project-detail">
                         <ul class="contribution-list">
-                            <li data-i18n-html="p1_point1"><strong>团队协同与架构设计：</strong>作为核心全栈开发成员，与团队紧密协同推进系统架构设计，将遥测数据摄取与后端业务解耦，大幅提高系统可维护性与水平扩展能力。</li>
-                            <li data-i18n-html="p1_point2"><strong>高并发数据管线：</strong>使用 FastAPI 结合 MQTT 协议接收设备遥测流，依托 InfluxDB 实现大规模时间序列数据高效入库。</li>
-                            <li data-i18n-html="p1_point3"><strong>设备仿真与容器化：</strong>编写 Python 传感器模拟脚本与指标告警引擎，采用 Docker 完成多服务编排部署。</li>
-                            <li data-i18n-html="p1_point4"><strong>学术成果沉淀：</strong>撰写平台架构与系统方法论，学术论文已正式投递至 SCI 检索期刊，目前处于同行评审（Peer Review）中。</li>
+                            <li data-i18n-html="p1_point1">
+                                <strong>团队协同与架构设计：</strong>作为核心全栈开发成员，与团队紧密协同推进系统架构设计，将遥测数据摄取与后端业务解耦，大幅提高系统可维护性与水平扩展能力。
+                            </li>
+                            <li data-i18n-html="p1_point2"><strong>高并发数据管线：</strong>使用 FastAPI 结合 MQTT 协议接收设备遥测流，依托
+                                InfluxDB 实现大规模时间序列数据高效入库。</li>
+                            <li data-i18n-html="p1_point3"><strong>设备仿真与容器化：</strong>编写 Python 传感器模拟脚本与指标告警引擎，采用 Docker
+                                完成多服务编排部署。</li>
+                            <li data-i18n-html="p1_point4"><strong>学术成果沉淀：</strong>撰写平台架构与系统方法论，学术论文已正式投递至 SCI
+                                检索期刊，目前处于同行评审（Peer Review）中。</li>
                         </ul>
                     </div>
+                </div>
+
+                <!-- 真实项目实战看板截图 (Mockup Preview) -->
+                <div class="project-mockup-wrap">
+                    <a href="./iotdashboard.png" target="_blank" rel="noopener noreferrer" class="mockup-img-link" title="点击查看高清实战看板 (原图)">
+                        <img src="./iotdashboard_preview.jpg" alt="UrbMobSense IoT Dashboard" class="project-preview-img" loading="lazy">
+                        <div class="mockup-overlay"><span class="zoom-badge">🔍 查看原图</span></div>
+                    </a>
+                    <div class="mockup-caption" data-i18n="p1_img_caption">🖼️ 实战看板：UrbMobSense 实时遥测微出行监控仪表盘 (带架构标注)</div>
                 </div>
 
                 <div class="feature-row">
@@ -123,11 +163,23 @@
                 <div class="project-content-grid">
                     <div class="project-detail">
                         <ul class="contribution-list">
-                            <li data-i18n-html="p2_point1"><strong>端到端独立交付：</strong>独立完成数据库 E-R 建模、RESTful API 契约设计、前端交互开发与部署上线。</li>
-                            <li data-i18n-html="p2_point2"><strong>双端管理与交互：</strong>基于 Vue.js 构建顾客点餐前端与商户管理后台，支持菜单动态维护、预约状态流转与实时反馈。</li>
-                            <li data-i18n-html="p2_point3"><strong>业务高可用与数据一致性：</strong>基于 Node.js 与 MySQL 搭建事务控制层，确保并发预订场景下的库存及状态一致性。</li>
+                            <li data-i18n-html="p2_point1"><strong>端到端独立交付：</strong>独立完成数据库 E-R 建模、RESTful API
+                                契约设计、前端交互开发与部署上线。</li>
+                            <li data-i18n-html="p2_point2"><strong>双端管理与交互：</strong>基于 Vue.js
+                                构建顾客点餐前端与商户管理后台，支持菜单动态维护、预约状态流转与实时反馈。</li>
+                            <li data-i18n-html="p2_point3"><strong>业务高可用与数据一致性：</strong>基于 Node.js 与 MySQL
+                                搭建事务控制层，确保并发预订场景下的库存及状态一致性。</li>
                         </ul>
                     </div>
+                </div>
+
+                <!-- 毕业设计展板海报展示 (Mockup Preview) -->
+                <div class="project-mockup-wrap">
+                    <a href="./POSTER.jpg" target="_blank" rel="noopener noreferrer" class="mockup-img-link" title="点击查看毕业设计展板大图 (原图)">
+                        <img src="./poster_preview.jpg" alt="餐饮订餐与运营管理系统架构展板" class="project-preview-img" loading="lazy">
+                        <div class="mockup-overlay"><span class="zoom-badge">🔍 查看原图</span></div>
+                    </a>
+                    <div class="mockup-caption" data-i18n="p2_img_caption">🖼️ 项目展板：餐饮订餐与综合运营系统架构海报 (点击放大原图)</div>
                 </div>
 
                 <div class="feature-row">
@@ -149,10 +201,31 @@
                 <div class="project-content-grid">
                     <div class="project-detail">
                         <ul class="contribution-list">
-                            <li data-i18n-html="p3_point1"><strong>敏捷工程协作：</strong>采用 Scrum 框架参与团队需求评审、Sprint 规划及 Git 分支合并规范。</li>
-                            <li data-i18n-html="p3_point2"><strong>核心财务资产模块：</strong>主导资产台账、收支统计分类和图表展示接口的 Node.js 后端开发。</li>
-                            <li data-i18n-html="p3_point3"><strong>组件化前端：</strong>使用 React 构建模块化视图与交互表单，确保移动端与桌面端的流畅体验。</li>
+                            <li data-i18n-html="p3_point1"><strong>敏捷工程协作：</strong>采用 Scrum 框架参与团队需求评审、Sprint 规划及 Git
+                                分支合并规范。</li>
+                            <li data-i18n-html="p3_point2"><strong>核心财务资产模块：</strong>主导资产台账、收支统计分类和图表展示接口的 Node.js 后端开发。
+                            </li>
+                            <li data-i18n-html="p3_point3"><strong>组件化前端：</strong>使用 React 构建模块化视图与交互表单，确保移动端与桌面端的流畅体验。
+                            </li>
                         </ul>
+                    </div>
+                </div>
+
+                <!-- Goodbuck 界面截屏与架构图双列展示 (Mockup Previews) -->
+                <div class="project-mockup-grid">
+                    <div class="project-mockup-wrap">
+                        <a href="./goodbuck_screens.png" target="_blank" rel="noopener noreferrer" class="mockup-img-link" title="点击查看 Goodbuck UI 原型截图 (原图)">
+                            <img src="./goodbuck_screens.png" alt="Goodbuck UI Mockup" class="project-preview-img" loading="lazy">
+                            <div class="mockup-overlay"><span class="zoom-badge">🔍 查看原图</span></div>
+                        </a>
+                        <div class="mockup-caption" data-i18n="p3_img_caption1">📱 核心界面：Goodbuck 个人财务高保真 UI 原型展示</div>
+                    </div>
+                    <div class="project-mockup-wrap">
+                        <a href="./goodbuck_sitemap.png" target="_blank" rel="noopener noreferrer" class="mockup-img-link" title="点击查看 Goodbuck Sitemap 架构图 (原图)">
+                            <img src="./goodbuck_sitemap.png" alt="Goodbuck Sitemap Architecture" class="project-preview-img" loading="lazy">
+                            <div class="mockup-overlay"><span class="zoom-badge">🔍 查看原图</span></div>
+                        </a>
+                        <div class="mockup-caption" data-i18n="p3_img_caption2">🗺️ 架构设计：Sitemap 信息架构与功能业务流转图</div>
                     </div>
                 </div>
 
@@ -169,7 +242,8 @@
             <div class="case-header">
                 <div class="case-title">
                     <h2 data-i18n="skills_sec_title">全链路交付能力体系 (END-TO-END DELIVERY)</h2>
-                    <p class="section-subtitle" data-i18n="skills_sec_sub">立足 ESMAD 设计学院 + 计算机工程双背景，打造“原型设计 ➔ 代码实现 ➔ 架构部署”闭环</p>
+                    <p class="section-subtitle" data-i18n="skills_sec_sub">立足 ESMAD 设计学院 + 计算机工程双背景，打造“原型设计 ➔ 代码实现 ➔
+                        架构部署”闭环</p>
                 </div>
                 <div class="case-number">// CAPABILITIES</div>
             </div>
@@ -228,6 +302,23 @@
                         <li data-i18n="skill_c3_i6">Cloud Services & 接口部署</li>
                     </ul>
                 </div>
+
+                <!-- 能力维度 4: AI Agent 研发探索与大模型工程 -->
+                <div class="skill-category-card skill-card-ai">
+                    <div class="skill-icon">🤖</div>
+                    <div class="skill-cat-title">
+                        <h3 data-i18n="skill_col4_title">AI Agent & 智能体工程探索</h3>
+                        <span class="skill-tag-sub" data-i18n="skill_col4_sub">前沿技术栈 · 浓厚兴趣与持续实操</span>
+                    </div>
+                    <p class="skill-cat-desc" data-i18n="skill_col4_desc">对自主智能体架构、大语言模型工程工作流与端到端自动化抱有浓厚兴趣，积极探索 Agent 赋能的全流程代码构建与创新交互。</p>
+                    <ul class="skill-badge-list">
+                        <li data-i18n="skill_c4_i1">Multi-Agent 智能体架构与编排 (LangChain / Agents)</li>
+                        <li data-i18n="skill_c4_i2">Prompt Engineering & 结构化上下文设计</li>
+                        <li data-i18n="skill_c4_i3">Function Calling & 工具外部 API 调用集成</li>
+                        <li data-i18n="skill_c4_i4">RAG 检索增强生成与私有知识库管线</li>
+                        <li data-i18n="skill_c4_i5">AI 协同敏捷编程与自动化全流程测试</li>
+                    </ul>
+                </div>
             </div>
 
             <!-- 语言沟通能力条 -->
@@ -262,7 +353,8 @@
                         <h3 data-i18n="edu_m_school">米尼奥大学 (University of Minho)</h3>
                         <div class="edu-degree" data-i18n="edu_m_degree">信息工程硕士 (M.Sc. in Informatics Engineering)</div>
                         <p class="edu-location" data-i18n="edu_m_loc">📍 葡萄牙布拉加 / 吉马良斯</p>
-                        <p class="edu-summary" data-i18n="edu_m_desc">专注于软件工程、物联网架构及数据可视化系统研究。主导 UrbMobSense 城市微出行物联网课题。</p>
+                        <p class="edu-summary" data-i18n="edu_m_desc">专注于软件工程、物联网架构及数据可视化系统研究。主导 UrbMobSense 城市微出行物联网课题。
+                        </p>
                     </div>
                 </div>
 
@@ -274,10 +366,13 @@
                     </div>
                     <div class="edu-main">
                         <h3 data-i18n="edu_b_school">波尔图理工学院 (Polytechnic Institute of Porto - P.PORTO)</h3>
-                        <div class="edu-degree" data-i18n="edu_b_degree">网络信息系统与技术学士 (B.Sc. in Web Information Systems and Technologies)</div>
-                        <p class="edu-location" data-i18n="edu_b_loc">📍 葡萄牙波尔图 · ESMAD (Escola Superior de Media Artes e Design) 传媒艺术与设计学院</p>
-                        <p class="edu-summary" data-i18n="edu_b_desc">系统接受计算机技术与人机交互双重培养，涵盖高级原型设计、认知人机工学、云服务接口、移动计算等。</p>
-                        
+                        <div class="edu-degree" data-i18n="edu_b_degree">网络信息系统与技术学士 (B.Sc. in Web Information Systems
+                            and Technologies)</div>
+                        <p class="edu-location" data-i18n="edu_b_loc">📍 葡萄牙波尔图 · ESMAD (Escola Superior de Media Artes
+                            e Design) 传媒艺术与设计学院</p>
+                        <p class="edu-summary" data-i18n="edu_b_desc">系统接受计算机技术与人机交互双重培养，涵盖高级原型设计、认知人机工学、云服务接口、移动计算等。
+                        </p>
+
                         <!-- 核心代表高分课程 -->
                         <div class="course-highlights">
                             <span class="highlight-title" data-i18n="edu_b_hl_title">代表性高分课程成果：</span>
@@ -285,7 +380,8 @@
                                 <span class="tag-score" data-i18n="course_proj">毕业设计与实习 <strong>15/20</strong></span>
                                 <span class="tag-score" data-i18n="course_mobile">移动与普适计算 <strong>15/20</strong></span>
                                 <span class="tag-score" data-i18n="course_cloud">云服务与接口 <strong>14/20</strong></span>
-                                <span class="tag-score" data-i18n="course_ergo">认知人机工学与交互设计 <strong>13/20</strong></span>
+                                <span class="tag-score" data-i18n="course_ergo">认知人机工学与交互设计
+                                    <strong>13/20</strong></span>
                                 <span class="tag-score" data-i18n="course_proto">数字平台高级原型 <strong>11/20</strong></span>
                             </div>
                         </div>
@@ -297,11 +393,14 @@
                                 <div class="cert-info">
                                     <span class="cert-icon">📜</span>
                                     <div>
-                                        <strong data-i18n="cert_title_pt">波尔图理工学院官方学业成绩认证 (Certidão Oficial P.PORTO)</strong>
-                                        <p class="cert-note" data-i18n="cert_note_pt">已核验波尔图理工学院官方印章与学术档案 (2024年8月签发 · PDF)</p>
+                                        <strong data-i18n="cert_title_pt">波尔图理工学院官方学业成绩认证 (Certidão Oficial
+                                            P.PORTO)</strong>
+                                        <p class="cert-note" data-i18n="cert_note_pt">已核验波尔图理工学院官方印章与学术档案 (2024年8月签发 ·
+                                            PDF)</p>
                                     </div>
                                 </div>
-                                <a href="./certidao.pdf" target="_blank" class="btn-cert" rel="noopener noreferrer" data-i18n="btn_view_cert_pt">
+                                <a href="./certidao.pdf" target="_blank" class="btn-cert" rel="noopener noreferrer"
+                                    data-i18n="btn_view_cert_pt">
                                     查看官方认证 PDF ↗
                                 </a>
                             </div>
@@ -312,10 +411,12 @@
                                     <span class="cert-icon">🎓</span>
                                     <div>
                                         <strong data-i18n="cert_title_cn">中国教育部留学服务中心 (CSCSE) 国(境)外学历学位认证书</strong>
-                                        <p class="cert-note" data-i18n="cert_note_cn">教育部留服中心权威核验认证书 (中国留学网官方认证 · JPG)</p>
+                                        <p class="cert-note" data-i18n="cert_note_cn">教育部留服中心权威核验认证书 (中国留学网官方认证 · JPG)
+                                        </p>
                                     </div>
                                 </div>
-                                <a href="./中国留学网认证.jpg" target="_blank" class="btn-cert btn-cert-cn" rel="noopener noreferrer" data-i18n="btn_view_cert_cn">
+                                <a href="./中国留学网认证.jpg" target="_blank" class="btn-cert btn-cert-cn"
+                                    rel="noopener noreferrer" data-i18n="btn_view_cert_cn">
                                     查看中留服认证 JPG ↗
                                 </a>
                             </div>
@@ -334,11 +435,16 @@
                 </div>
                 <div class="footer-right">
                     <div class="footer-contact-summary">
-                        <span><span data-i18n="footer_email">邮箱：</span><a href="mailto:chenjunqing2001@gmail.com">chenjunqing2001@gmail.com</a></span>
+                        <span><span data-i18n="footer_email">邮箱：</span><a
+                                href="mailto:chenjunqing2001@gmail.com">chenjunqing2001@gmail.com</a></span>
                         <span><span data-i18n="footer_wechat">微信：</span><code>Chen_20010210</code></span>
-                        <span><span data-i18n="footer_phone">电话：</span><code>+351 966 396 682</code> / <code>17850223089 (SMS)</code></span>
+                        <span><span data-i18n="footer_phone">电话：</span><code>+351 966 396 682</code> /
+                            <code>17850223089 (SMS)</code></span>
                     </div>
                     <div class="footer-links">
+                        <a href="https://github.com/Junqingchen01" target="_blank" rel="noopener noreferrer" class="footer-ext-link">GitHub ↗</a> •
+                        <a href="https://www.linkedin.com/in/chen-junqing-6358022a5/" target="_blank" rel="noopener noreferrer" class="footer-ext-link">LinkedIn ↗</a> •
+                        <a href="./myinfo.pdf" target="_blank" download="Junqing_Chen_CV.pdf" class="footer-ext-link" data-i18n="btn_download_resume">简历 PDF ⬇</a> •
                         <a href="#top" data-i18n="footer_back_top">回到顶部 ↑</a>
                     </div>
                 </div>
@@ -349,8 +455,29 @@
         </footer>
     </div>
 
+    <!-- 竖向点状浮动导航 (Floating Vertical Dot Nav) -->
+    <nav class="floating-dot-nav" id="floating-dot-nav" aria-label="页面模块快速导航">
+        <a href="#about" class="dot-item active" data-section="about" aria-label="关于我">
+            <span class="dot-point"></span>
+            <span class="dot-tooltip" data-i18n="dot_nav_about">关于我</span>
+        </a>
+        <a href="#projects" class="dot-item" data-section="projects" aria-label="精选项目">
+            <span class="dot-point"></span>
+            <span class="dot-tooltip" data-i18n="dot_nav_projects">精选项目</span>
+        </a>
+        <a href="#skills" class="dot-item" data-section="skills" aria-label="能力矩阵">
+            <span class="dot-point"></span>
+            <span class="dot-tooltip" data-i18n="dot_nav_skills">能力矩阵</span>
+        </a>
+        <a href="#education" class="dot-item" data-section="education" aria-label="教育与证书">
+            <span class="dot-point"></span>
+            <span class="dot-tooltip" data-i18n="dot_nav_education">教育与证书</span>
+        </a>
+    </nav>
+
     <!-- 联系方式弹出模态窗口 (Contact Modal) -->
-    <div class="modal-overlay" id="contact-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-overlay" id="contact-modal" aria-hidden="true" role="dialog" aria-modal="true"
+        aria-labelledby="modal-title">
         <div class="modal-card">
             <button class="modal-close" id="close-modal-btn" aria-label="关闭窗口">&times;</button>
             <div class="modal-header">
@@ -359,6 +486,24 @@
             </div>
 
             <div class="contact-channels">
+                <!-- 专业社交与代码主页 -->
+                <div class="channel-group channel-group-social">
+                    <div class="channel-heading">
+                        <span class="channel-flag">🔗</span>
+                        <strong data-i18n="modal_social">专业社交与代码主页 (Profiles)</strong>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">GitHub：</span>
+                        <a href="https://github.com/Junqingchen01" target="_blank" rel="noopener noreferrer"
+                            class="contact-val">github.com/Junqingchen01 ↗</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">LinkedIn：</span>
+                        <a href="https://www.linkedin.com/in/chen-junqing-6358022a5/" target="_blank" rel="noopener noreferrer"
+                            class="contact-val">linkedin.com/in/chen-junqing-6358022a5 ↗</a>
+                    </div>
+                </div>
+
                 <!-- 欧洲 / 国际通道 -->
                 <div class="channel-group">
                     <div class="channel-heading">
@@ -367,8 +512,10 @@
                     </div>
                     <div class="contact-item">
                         <span class="contact-label" data-i18n="ch_email_lbl">电子邮箱：</span>
-                        <a href="mailto:chenjunqing2001@gmail.com" class="contact-val email-link">chenjunqing2001@gmail.com</a>
-                        <button class="btn-copy" data-copy="chenjunqing2001@gmail.com" title="复制邮箱" data-i18n="btn_copy">复制</button>
+                        <a href="mailto:chenjunqing2001@gmail.com"
+                            class="contact-val email-link">chenjunqing2001@gmail.com</a>
+                        <button class="btn-copy" data-copy="chenjunqing2001@gmail.com" title="复制邮箱"
+                            data-i18n="btn_copy">复制</button>
                     </div>
                     <div class="contact-item">
                         <span class="contact-label" data-i18n="ch_phone_lbl">国际电话：</span>
@@ -390,12 +537,15 @@
                     <div class="contact-item">
                         <span class="contact-label" data-i18n="ch_wechat_lbl">微信号：</span>
                         <span class="contact-val"><code>Chen_20010210</code></span>
-                        <button class="btn-copy" data-copy="Chen_20010210" title="复制微信号" data-i18n="btn_copy_wechat">复制微信</button>
+                        <button class="btn-copy" data-copy="Chen_20010210" title="复制微信号"
+                            data-i18n="btn_copy_wechat">复制微信</button>
                     </div>
                     <div class="contact-item">
                         <span class="contact-label" data-i18n="ch_cnphone_lbl">手机号码：</span>
-                        <span class="contact-val"><code>17850223089</code> <small class="text-hint" data-i18n="ch_cnphone_hint">(仅支持短信 / SMS only)</small></span>
-                        <button class="btn-copy" data-copy="17850223089" title="复制手机号" data-i18n="btn_copy_phone">复制号码</button>
+                        <span class="contact-val"><code>17850223089</code> <small class="text-hint"
+                                data-i18n="ch_cnphone_hint">(仅支持短信 / SMS only)</small></span>
+                        <button class="btn-copy" data-copy="17850223089" title="复制手机号"
+                            data-i18n="btn_copy_phone">复制号码</button>
                     </div>
                     <div class="contact-item">
                         <span class="contact-label" data-i18n="ch_pref_lbl">工作方式：</span>
