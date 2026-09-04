@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="陈俊清 (Junqing Chen) 的个人作品集与CV - 全栈开发工程师与交互设计工程师，具备产品原型设计、前后端开发及IoT系统构建能力。">
+    <title>陈俊清 | 全栈开发工程师 & 交互设计工程</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="page-wrap">
+        <!-- 顶部导航栏 (Header) -->
+        <header id="top">
+            <div class="header-left">
+                <div class="logo-box" title="Junqing Chen">
+                    <span class="logo-text">JC</span>
+                </div>
+                <div class="available-badge">
+                    <span class="dot-green"></span>
+                    <span data-i18n="status_available">求职中 (实习 / 全职 · 欧洲 / 中国 / 远程)</span>
+                </div>
+            </div>
+            
+            <!-- 导航菜单 -->
+            <nav>
+                <a href="#about" class="nav-link active" data-i18n="nav_about">关于</a> •
+                <a href="#projects" class="nav-link" data-i18n="nav_projects">精选项目</a> •
+                <a href="#skills" class="nav-link" data-i18n="nav_skills">技能体系</a> •
+                <a href="#education" class="nav-link" data-i18n="nav_education">教育与证书</a> •
+                <a href="#contact" class="nav-link" id="nav-contact-link" data-i18n="nav_contact">联系我</a>
+            </nav>
+
+            <!-- 右侧控制区：语言切换器 + 联络按钮 -->
+            <div class="header-right-actions">
+                <div class="lang-switcher" role="group" aria-label="Language Selector">
+                    <button class="lang-btn active" data-lang="zh" title="切换为中文">中</button>
+                    <button class="lang-btn" data-lang="en" title="Switch to English">EN</button>
+                    <button class="lang-btn" data-lang="pt" title="Mudar para Português">PT</button>
+                </div>
+                <button class="btn-book" id="open-contact-btn" aria-label="打开联系方式窗口">
+                    <span>🗨</span> <span data-i18n="btn_contact">立即联络</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- 首屏介绍区 (Hero Section) -->
+        <section class="hero" id="about">
+            <div class="hero-left">
+                <div class="avatar-card">
+                    <div class="avatar-initials">JC</div>
+                </div>
+                <div class="hero-title">
+                    <small data-i18n="hero_greeting">你好，我是</small>
+                    <h1 data-i18n="hero_name">陈俊清</h1>
+                    <span class="en-name" data-i18n="hero_en_name">JUNQING CHEN</span>
+                </div>
+            </div>
+            <div class="hero-right">
+                <p class="hero-lead" data-i18n-html="hero_lead">
+                    <strong>全栈开发工程师 & 交互工程设计</strong><br>
+                    现居葡萄牙维亚纳堡 (Viana do Castelo)。就读于葡萄牙米尼奥大学 (M.Sc.)，毕业于波尔图理工学院 ESMAD 设计与艺术学院 (B.Sc.)。
+                </p>
+                <p class="hero-sub" data-i18n="hero_sub">
+                    具备“用户体验与交互原型 ➔ 前端交互 ➔ 后端 API 与数据链路 ➔ 容器化部署”的全链路交付能力。
+                </p>
+                <div class="hero-tags">
+                    <span class="hero-tag" data-i18n="hero_tag_loc">📍 葡萄牙 Viana do Castelo / 中国</span>
+                    <span class="hero-tag" data-i18n="hero_tag_roles">🎯 全栈 / 后端 / 前端 / Web交互</span>
+                    <span class="hero-tag" data-i18n="hero_tag_lang">🌐 中 (母语) / 英 (Fluent) / 葡 (B1)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 精选核心项目 (Featured Projects) -->
+        <section class="case-block" id="projects">
+            <div class="case-header">
+                <div class="case-title">
+                    <h2 data-i18n="proj_sec_title">精选工程与研发项目 (FEATURED PROJECTS)</h2>
+                    <p class="section-subtitle" data-i18n="proj_sec_sub">涵盖物联网高并发处理、企业级全栈预约系统与敏捷协作财务应用</p>
+                </div>
+                <div class="case-number">// 01 - 03</div>
+            </div>
+
+            <!-- 项目 1: UrbMobSense -->
+            <div class="mockup-card project-card">
+                <div class="project-badge" data-i18n="p1_badge">硕士重点团队项目 · 2026年7月 - 至今 · SCI论文投递审稿中</div>
+                <h3 data-i18n="p1_title">UrbMobSense 城市微出行 物联网监控平台</h3>
+                <div class="mockup-desc" data-i18n-html="p1_desc">
+                    <strong>技术栈：</strong>FastAPI, MQTT, InfluxDB, Python, Docker, Web Dashboard<br>
+                    解耦数据摄取、后台服务、时序存储与前端可视化，构建高稳定性、高可用物联网监控系统。
+                </div>
+
+                <div class="project-content-grid">
+                    <div class="project-detail">
+                        <ul class="contribution-list">
+                            <li data-i18n-html="p1_point1"><strong>团队协同与架构设计：</strong>作为核心全栈开发成员，与团队紧密协同推进系统架构设计，将遥测数据摄取与后端业务解耦，大幅提高系统可维护性与水平扩展能力。</li>
+                            <li data-i18n-html="p1_point2"><strong>高并发数据管线：</strong>使用 FastAPI 结合 MQTT 协议接收设备遥测流，依托 InfluxDB 实现大规模时间序列数据高效入库。</li>
+                            <li data-i18n-html="p1_point3"><strong>设备仿真与容器化：</strong>编写 Python 传感器模拟脚本与指标告警引擎，采用 Docker 完成多服务编排部署。</li>
+                            <li data-i18n-html="p1_point4"><strong>学术成果沉淀：</strong>撰写平台架构与系统方法论，学术论文已正式投递至 SCI 检索期刊，目前处于同行评审（Peer Review）中。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-row">
+                    <div class="feature-item" data-i18n="p1_tag1">📡 MQTT 遥测协议</div>
+                    <div class="feature-item" data-i18n="p1_tag2">📈 InfluxDB 时序数据</div>
+                    <div class="feature-item" data-i18n="p1_tag3">⚡ FastAPI 高性能异步接口</div>
+                    <div class="feature-item" data-i18n="p1_tag4">🐳 Docker 容器编排</div>
+                </div>
+            </div>
+
+            <!-- 项目 2: 订餐与后台管理系统 -->
+            <div class="mockup-card project-card project-card-secondary">
+                <div class="project-badge" data-i18n="p2_badge">本科毕业设计 · 2024 (评分: 15/20)</div>
+                <h3 data-i18n="p2_title">餐饮订餐与 运营管理 综合平台</h3>
+                <div class="mockup-desc" data-i18n-html="p2_desc">
+                    <strong>技术栈：</strong>Vue.js, Node.js (RESTful APIs), MySQL, Web Components<br>
+                    面向客户与管理者的端到端餐饮预订系统，实现全流程数字化管理。
+                </div>
+
+                <div class="project-content-grid">
+                    <div class="project-detail">
+                        <ul class="contribution-list">
+                            <li data-i18n-html="p2_point1"><strong>端到端独立交付：</strong>独立完成数据库 E-R 建模、RESTful API 契约设计、前端交互开发与部署上线。</li>
+                            <li data-i18n-html="p2_point2"><strong>双端管理与交互：</strong>基于 Vue.js 构建顾客点餐前端与商户管理后台，支持菜单动态维护、预约状态流转与实时反馈。</li>
+                            <li data-i18n-html="p2_point3"><strong>业务高可用与数据一致性：</strong>基于 Node.js 与 MySQL 搭建事务控制层，确保并发预订场景下的库存及状态一致性。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-row">
+                    <div class="feature-item" data-i18n="p2_tag1">🖥️ Vue.js 自适应控制面板</div>
+                    <div class="feature-item" data-i18n="p2_tag2">🔌 Node.js RESTful APIs</div>
+                    <div class="feature-item" data-i18n="p2_tag3">🗄️ MySQL 关系型数据库</div>
+                </div>
+            </div>
+
+            <!-- 项目 3: Goodbuck 个人财务应用 -->
+            <div class="mockup-card project-card project-card-tertiary">
+                <div class="project-badge" data-i18n="p3_badge">团队协作项目 · 2024</div>
+                <h3 data-i18n="p3_title">Goodbuck 个人财务 与资产规划应用</h3>
+                <div class="mockup-desc" data-i18n-html="p3_desc">
+                    <strong>技术栈：</strong>React, Node.js, MySQL, Git, Agile/Scrum<br>
+                    以用户收支规划为核心的现代响应式 Web 应用，敏捷迭代开发。
+                </div>
+
+                <div class="project-content-grid">
+                    <div class="project-detail">
+                        <ul class="contribution-list">
+                            <li data-i18n-html="p3_point1"><strong>敏捷工程协作：</strong>采用 Scrum 框架参与团队需求评审、Sprint 规划及 Git 分支合并规范。</li>
+                            <li data-i18n-html="p3_point2"><strong>核心财务资产模块：</strong>主导资产台账、收支统计分类和图表展示接口的 Node.js 后端开发。</li>
+                            <li data-i18n-html="p3_point3"><strong>组件化前端：</strong>使用 React 构建模块化视图与交互表单，确保移动端与桌面端的流畅体验。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-row">
+                    <div class="feature-item" data-i18n="p3_tag1">⚛️ React 组件化开发</div>
+                    <div class="feature-item" data-i18n="p3_tag2">📊 资产与收支流转</div>
+                    <div class="feature-item" data-i18n="p3_tag3">🤝 Agile / Git 协同开发</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 场景化能力与技术矩阵 (Skills & UX Matrix) -->
+        <section class="skills-block" id="skills">
+            <div class="case-header">
+                <div class="case-title">
+                    <h2 data-i18n="skills_sec_title">全链路交付能力体系 (END-TO-END DELIVERY)</h2>
+                    <p class="section-subtitle" data-i18n="skills_sec_sub">立足 ESMAD 设计学院 + 计算机工程双背景，打造“原型设计 ➔ 代码实现 ➔ 架构部署”闭环</p>
+                </div>
+                <div class="case-number">// CAPABILITIES</div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- 能力维度 1: 产品与交互设计 -->
+                <div class="skill-category-card">
+                    <div class="skill-icon">🎨</div>
+                    <div class="skill-cat-title">
+                        <h3 data-i18n="skill_col1_title">UX/UI & 产品交互设计</h3>
+                        <span class="skill-tag-sub" data-i18n="skill_col1_sub">独特科班优势 · ESMAD 科班培养</span>
+                    </div>
+                    <p class="skill-cat-desc" data-i18n="skill_col1_desc">深入理解用户心理与操作链路，能够输出专业高保真可交互原型并转化为前端工程代码。</p>
+                    <ul class="skill-badge-list">
+                        <li data-i18n="skill_c1_i1">User Flow (用户旅程流)</li>
+                        <li data-i18n="skill_c1_i2">Sitemap & 信息架构</li>
+                        <li data-i18n="skill_c1_i3">Interactive Prototyping (Figma)</li>
+                        <li data-i18n="skill_c1_i4">认知人机工学 (Cognitive Ergonomics)</li>
+                        <li data-i18n="skill_c1_i5">Usability 可用性启发式评估</li>
+                        <li data-i18n="skill_c1_i6">Design Systems (设计规范构建)</li>
+                    </ul>
+                </div>
+
+                <!-- 能力维度 2: 前后端工程实现 -->
+                <div class="skill-category-card">
+                    <div class="skill-icon">💻</div>
+                    <div class="skill-cat-title">
+                        <h3 data-i18n="skill_col2_title">Web & 全栈工程开发</h3>
+                        <span class="skill-tag-sub" data-i18n="skill_col2_sub">核心技术栈 · 规范工程实践</span>
+                    </div>
+                    <p class="skill-cat-desc" data-i18n="skill_col2_desc">掌握现代主流前后端框架，注重代码可读性、状态管理、模块化拆分与接口契约。</p>
+                    <ul class="skill-badge-list">
+                        <li data-i18n="skill_c2_i1">JavaScript (ES6+) & TypeScript 基础</li>
+                        <li data-i18n="skill_c2_i2">Vue.js & React 响应式开发</li>
+                        <li data-i18n="skill_c2_i3">Node.js (Express) 后端服务</li>
+                        <li data-i18n="skill_c2_i4">FastAPI (Python) 异步微服务</li>
+                        <li data-i18n="skill_c2_i5">RESTful API 规范设计与联调</li>
+                        <li data-i18n="skill_c2_i6">原生 HTML5 / 语义化 CSS (Flex/Grid)</li>
+                    </ul>
+                </div>
+
+                <!-- 能力维度 3: 数据基建与物联网系统 -->
+                <div class="skill-category-card">
+                    <div class="skill-icon">⚙️</div>
+                    <div class="skill-cat-title">
+                        <h3 data-i18n="skill_col3_title">数据系统、IoT 与运维部署</h3>
+                        <span class="skill-tag-sub" data-i18n="skill_col3_sub">底层支撑 · 稳定可靠交付</span>
+                    </div>
+                    <p class="skill-cat-desc" data-i18n="skill_col3_desc">具备关系型与时序型数据库应用能力，熟悉物联网消息协议与标准容器化编排。</p>
+                    <ul class="skill-badge-list">
+                        <li data-i18n="skill_c3_i1">MySQL (表结构与事务逻辑)</li>
+                        <li data-i18n="skill_c3_i2">InfluxDB (时序数据管理与存储)</li>
+                        <li data-i18n="skill_c3_i3">MQTT 消息队列与设备数据采集</li>
+                        <li data-i18n="skill_c3_i4">Docker 容器化与服务打包</li>
+                        <li data-i18n="skill_c3_i5">Git 协作与版本管控</li>
+                        <li data-i18n="skill_c3_i6">Cloud Services & 接口部署</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 语言沟通能力条 -->
+            <div class="language-bar">
+                <div class="lang-title"><strong data-i18n="lang_label">🗣️ 语言工作能力：</strong></div>
+                <div class="lang-items">
+                    <span class="lang-pill" data-i18n="lang_zh">中文 · 母语 (Native)</span>
+                    <span class="lang-pill" data-i18n="lang_en">英语 · 流利无障碍 (Fluent - 工作语言)</span>
+                    <span class="lang-pill" data-i18n="lang_pt">葡萄牙语 · 日常与基础技术沟通 (B1)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 教育背景与官方成绩认证 (Education & Certifications) -->
+        <section class="case-block" id="education">
+            <div class="case-header">
+                <div class="case-title">
+                    <h2 data-i18n="edu_sec_title">教育背景与学术成果 (EDUCATION & DEGREE)</h2>
+                    <p class="section-subtitle" data-i18n="edu_sec_sub">结合顶级工程学院与媒体艺术设计学院的双重学术积淀</p>
+                </div>
+                <div class="case-number">// ACADEMICS</div>
+            </div>
+
+            <div class="education-container">
+                <!-- 硕士 -->
+                <div class="edu-card">
+                    <div class="edu-meta">
+                        <span class="edu-period" data-i18n="edu_m_time">2025 – 预计 2027</span>
+                        <span class="edu-status" data-i18n="edu_m_status">在读 (硕士)</span>
+                    </div>
+                    <div class="edu-main">
+                        <h3 data-i18n="edu_m_school">米尼奥大学 (University of Minho)</h3>
+                        <div class="edu-degree" data-i18n="edu_m_degree">信息工程硕士 (M.Sc. in Informatics Engineering)</div>
+                        <p class="edu-location" data-i18n="edu_m_loc">📍 葡萄牙布拉加 / 吉马良斯</p>
+                        <p class="edu-summary" data-i18n="edu_m_desc">专注于软件工程、物联网架构及数据可视化系统研究。主导 UrbMobSense 城市微出行物联网课题。</p>
+                    </div>
+                </div>
+
+                <!-- 本科 -->
+                <div class="edu-card">
+                    <div class="edu-meta">
+                        <span class="edu-period" data-i18n="edu_b_time">2021 – 2024</span>
+                        <span class="edu-status" data-i18n="edu_b_status">已毕业 (学士)</span>
+                    </div>
+                    <div class="edu-main">
+                        <h3 data-i18n="edu_b_school">波尔图理工学院 (Polytechnic Institute of Porto - P.PORTO)</h3>
+                        <div class="edu-degree" data-i18n="edu_b_degree">网络信息系统与技术学士 (B.Sc. in Web Information Systems and Technologies)</div>
+                        <p class="edu-location" data-i18n="edu_b_loc">📍 葡萄牙波尔图 · ESMAD (Escola Superior de Media Artes e Design) 传媒艺术与设计学院</p>
+                        <p class="edu-summary" data-i18n="edu_b_desc">系统接受计算机技术与人机交互双重培养，涵盖高级原型设计、认知人机工学、云服务接口、移动计算等。</p>
+                        
+                        <!-- 核心代表高分课程 -->
+                        <div class="course-highlights">
+                            <span class="highlight-title" data-i18n="edu_b_hl_title">代表性高分课程成果：</span>
+                            <div class="highlight-tags">
+                                <span class="tag-score" data-i18n="course_proj">毕业设计与实习 <strong>15/20</strong></span>
+                                <span class="tag-score" data-i18n="course_mobile">移动与普适计算 <strong>15/20</strong></span>
+                                <span class="tag-score" data-i18n="course_cloud">云服务与接口 <strong>14/20</strong></span>
+                                <span class="tag-score" data-i18n="course_ergo">认知人机工学与交互设计 <strong>13/20</strong></span>
+                                <span class="tag-score" data-i18n="course_proto">数字平台高级原型 <strong>11/20</strong></span>
+                            </div>
+                        </div>
+
+                        <!-- 官方认证与学历证书卡片（中葡双重认证入口） -->
+                        <div class="dual-certificates-grid">
+                            <!-- 证书 1: 波尔图理工学院官方成绩认证 PDF -->
+                            <div class="certificate-action-box">
+                                <div class="cert-info">
+                                    <span class="cert-icon">📜</span>
+                                    <div>
+                                        <strong data-i18n="cert_title_pt">波尔图理工学院官方学业成绩认证 (Certidão Oficial P.PORTO)</strong>
+                                        <p class="cert-note" data-i18n="cert_note_pt">已核验波尔图理工学院官方印章与学术档案 (2024年8月签发 · PDF)</p>
+                                    </div>
+                                </div>
+                                <a href="./certidao.pdf" target="_blank" class="btn-cert" rel="noopener noreferrer" data-i18n="btn_view_cert_pt">
+                                    查看官方认证 PDF ↗
+                                </a>
+                            </div>
+
+                            <!-- 证书 2: 中国留学网认证 JPG -->
+                            <div class="certificate-action-box cert-box-cn">
+                                <div class="cert-info">
+                                    <span class="cert-icon">🎓</span>
+                                    <div>
+                                        <strong data-i18n="cert_title_cn">中国教育部留学服务中心 (CSCSE) 国(境)外学历学位认证书</strong>
+                                        <p class="cert-note" data-i18n="cert_note_cn">教育部留服中心权威核验认证书 (中国留学网官方认证 · JPG)</p>
+                                    </div>
+                                </div>
+                                <a href="./中国留学网认证.jpg" target="_blank" class="btn-cert btn-cert-cn" rel="noopener noreferrer" data-i18n="btn_view_cert_cn">
+                                    查看中留服认证 JPG ↗
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 页脚 (Footer) -->
+        <footer>
+            <div class="footer-inner">
+                <div class="footer-left">
+                    <div class="footer-logo">JC · Junqing Chen</div>
+                    <p data-i18n="footer_motto">致力于创造兼具优雅交互体验与扎实工程架构的 Web 与数字系统。</p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-contact-summary">
+                        <span><span data-i18n="footer_email">邮箱：</span><a href="mailto:chenjunqing2001@gmail.com">chenjunqing2001@gmail.com</a></span>
+                        <span><span data-i18n="footer_wechat">微信：</span><code>Chen_20010210</code></span>
+                        <span><span data-i18n="footer_phone">电话：</span><code>+351 966 396 682</code> / <code>17850223089 (SMS)</code></span>
+                    </div>
+                    <div class="footer-links">
+                        <a href="#top" data-i18n="footer_back_top">回到顶部 ↑</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <small data-i18n="footer_copy">© 2025-2026 陈俊清 (Junqing Chen). 纯原生 HTML/CSS/JS 构建 · 适配多端响应式体验</small>
+            </div>
+        </footer>
+    </div>
+
+    <!-- 联系方式弹出模态窗口 (Contact Modal) -->
+    <div class="modal-overlay" id="contact-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-card">
+            <button class="modal-close" id="close-modal-btn" aria-label="关闭窗口">&times;</button>
+            <div class="modal-header">
+                <h3 id="modal-title" data-i18n="modal_title">与我取得联系 (Get In Touch)</h3>
+                <p data-i18n="modal_sub">欢迎随时通过以下通道探讨实习、工作或技术合作机会：</p>
+            </div>
+
+            <div class="contact-channels">
+                <!-- 欧洲 / 国际通道 -->
+                <div class="channel-group">
+                    <div class="channel-heading">
+                        <span class="channel-flag">🇪🇺 / 🌐</span>
+                        <strong data-i18n="ch_intl">国际 / 欧洲通道 (Europe & Remote)</strong>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label" data-i18n="ch_email_lbl">电子邮箱：</span>
+                        <a href="mailto:chenjunqing2001@gmail.com" class="contact-val email-link">chenjunqing2001@gmail.com</a>
+                        <button class="btn-copy" data-copy="chenjunqing2001@gmail.com" title="复制邮箱" data-i18n="btn_copy">复制</button>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label" data-i18n="ch_phone_lbl">国际电话：</span>
+                        <a href="tel:+351966396682" class="contact-val">+351 966 396 682</a>
+                        <button class="btn-copy" data-copy="+351966396682" title="复制电话" data-i18n="btn_copy">复制</button>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label" data-i18n="ch_loc_lbl">所在地：</span>
+                        <span class="contact-val" data-i18n="ch_loc_val">Viana do Castelo, Portugal</span>
+                    </div>
+                </div>
+
+                <!-- 中国国内通道 -->
+                <div class="channel-group channel-group-cn">
+                    <div class="channel-heading">
+                        <span class="channel-flag">🇨🇳</span>
+                        <strong data-i18n="ch_cn">中国国内通道 (China Domestic)</strong>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label" data-i18n="ch_wechat_lbl">微信号：</span>
+                        <span class="contact-val"><code>Chen_20010210</code></span>
+                        <button class="btn-copy" data-copy="Chen_20010210" title="复制微信号" data-i18n="btn_copy_wechat">复制微信</button>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label" data-i18n="ch_cnphone_lbl">手机号码：</span>
+                        <span class="contact-val"><code>17850223089</code> <small class="text-hint" data-i18n="ch_cnphone_hint">(仅支持短信 / SMS only)</small></span>
+                        <button class="btn-copy" data-copy="17850223089" title="复制手机号" data-i18n="btn_copy_phone">复制号码</button>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label" data-i18n="ch_pref_lbl">工作方式：</span>
+                        <span class="contact-val" data-i18n="ch_pref_val">国内远程 / 现场工作机会均可探讨</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn-modal-done" id="modal-done-btn" data-i18n="btn_done">完成</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 复制成功的浮动提示 (Toast) -->
+    <div class="toast" id="copy-toast" role="alert" aria-live="polite">已复制到剪贴板！</div>
+
+    <!-- 脚本引入：国际化词典与交互逻辑 -->
+    <script src="./i18n.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

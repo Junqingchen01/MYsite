@@ -1,0 +1,492 @@
+/**
+ * ============================================================================
+ * Junqing Chen 个人网站多语言国际化字典 (i18n Dictionary)
+ * 支持三种语言：中文 (zh), 英语 (en), 葡萄牙语 (pt)
+ * 严格遵循真实语境表达与 Web 设计标准
+ * ============================================================================
+ */
+
+window.i18nTranslations = {
+    // ------------------------------------------------------------------------
+    // 中文 (Chinese)
+    // ------------------------------------------------------------------------
+    zh: {
+        page_title: "陈俊清 | 全栈开发工程师 & 交互设计工程",
+        page_description: "陈俊清 (Junqing Chen) 的个人作品集与CV - 全栈开发工程师与交互设计工程师，具备产品原型设计、前后端开发及IoT系统构建能力。",
+        status_available: "求职中 (实习/全职 · 欧/中/远程)",
+        nav_about: "关于",
+        nav_projects: "精选项目",
+        nav_skills: "技能体系",
+        nav_education: "教育与证书",
+        nav_contact: "联系我",
+        btn_contact: "立即联络",
+
+        // Hero
+        hero_greeting: "你好，我是",
+        hero_name: "陈俊清",
+        hero_en_name: "JUNQING CHEN",
+        hero_lead: "<strong>全栈开发工程师 & 交互工程设计</strong><br>现居葡萄牙维亚纳堡 (Viana do Castelo)。就读于葡萄牙米尼奥大学 (M.Sc.)，毕业于波尔图理工学院 ESMAD 设计与艺术学院 (B.Sc.)。",
+        hero_sub: "具备“用户体验与交互原型 ➔ 前端交互 ➔ 后端 API 与数据链路 ➔ 容器化部署”的全链路交付能力。",
+        hero_tag_loc: "📍 葡萄牙 Viana do Castelo / 中国",
+        hero_tag_roles: "🎯 全栈 / 后端 / 前端 / Web交互",
+        hero_tag_lang: "🌐 中 (母语) / 英 (Fluent) / 葡 (B1)",
+
+        // Projects Section
+        proj_sec_title: "精选工程与研发项目 (FEATURED PROJECTS)",
+        proj_sec_sub: "涵盖物联网高并发处理、企业级全栈预约系统与敏捷协作财务应用",
+        
+        // P1: UrbMobSense
+        p1_badge: "硕士重点团队项目 · 2026年7月 - 至今 · SCI论文投递审稿中",
+        p1_title: "UrbMobSense 城市微出行 物联网监控平台",
+        p1_desc: "<strong>技术栈：</strong>FastAPI, MQTT, InfluxDB, Python, Docker, Web Dashboard<br>解耦数据摄取、后台服务、时序存储与前端可视化，构建高稳定性、高可用物联网监控系统。",
+        p1_point1: "<strong>团队协同与架构设计：</strong>作为核心全栈开发成员，与团队紧密协同推进系统架构设计，将遥测数据摄取与后端业务解耦，大幅提高系统可维护性与水平扩展能力。",
+        p1_point2: "<strong>高并发数据管线：</strong>使用 FastAPI 结合 MQTT 协议接收设备遥测流，依托 InfluxDB 实现大规模时间序列数据高效入库。",
+        p1_point3: "<strong>设备仿真与容器化：</strong>编写 Python 传感器模拟脚本与指标告警引擎，采用 Docker 完成多服务编排部署。",
+        p1_point4: "<strong>学术成果沉淀：</strong>撰写平台架构与系统方法论，学术论文已正式投递至 SCI 检索期刊，目前处于同行评审（Peer Review）中。",
+        p1_tag1: "📡 MQTT 遥测协议",
+        p1_tag2: "📈 InfluxDB 时序数据",
+        p1_tag3: "⚡ FastAPI 高性能异步接口",
+        p1_tag4: "🐳 Docker 容器编排",
+
+        // P2: Meal Booking
+        p2_badge: "本科毕业设计 · 2024 (评分: 15/20)",
+        p2_title: "餐饮订餐与 运营管理 综合平台",
+        p2_desc: "<strong>技术栈：</strong>Vue.js, Node.js (RESTful APIs), MySQL, Web Components<br>面向客户与管理者的端到端餐饮预订系统，实现全流程数字化管理。",
+        p2_point1: "<strong>端到端独立交付：</strong>独立完成数据库 E-R 建模、RESTful API 契约设计、前端交互开发与部署上线。",
+        p2_point2: "<strong>双端管理与交互：</strong>基于 Vue.js 构建顾客点餐前端与商户管理后台，支持菜单动态维护、预约状态流转与实时反馈。",
+        p2_point3: "<strong>业务高可用与数据一致性：</strong>基于 Node.js 与 MySQL 搭建事务控制层，确保并发预订场景下的库存及状态一致性。",
+        p2_tag1: "🖥️ Vue.js 自适应控制面板",
+        p2_tag2: "🔌 Node.js RESTful APIs",
+        p2_tag3: "🗄️ MySQL 关系型数据库",
+
+        // P3: Goodbuck
+        p3_badge: "团队协作项目 · 2024",
+        p3_title: "Goodbuck 个人财务 与资产规划应用",
+        p3_desc: "<strong>技术栈：</strong>React, Node.js, MySQL, Git, Agile/Scrum<br>以用户收支规划为核心的现代响应式 Web 应用，敏捷迭代开发。",
+        p3_point1: "<strong>敏捷工程协作：</strong>采用 Scrum 框架参与团队需求评审、Sprint 规划及 Git 分支合并规范。",
+        p3_point2: "<strong>核心财务资产模块：</strong>主导资产台账、收支统计分类和图表展示接口的 Node.js 后端开发。",
+        p3_point3: "<strong>组件化前端：</strong>使用 React 构建模块化视图与交互表单，确保移动端与桌面端的流畅体验。",
+        p3_tag1: "⚛️ React 组件化开发",
+        p3_tag2: "📊 资产与收支流转",
+        p3_tag3: "🤝 Agile / Git 协同开发",
+
+        // Capabilities / Skills
+        skills_sec_title: "全链路交付能力体系 (END-TO-END DELIVERY)",
+        skills_sec_sub: "立足 ESMAD 设计学院 + 计算机工程双背景，打造“原型设计 ➔ 代码实现 ➔ 架构部署”闭环",
+        skill_col1_title: "UX/UI & 产品交互设计",
+        skill_col1_sub: "独特科班优势 · ESMAD 科班培养",
+        skill_col1_desc: "深入理解用户心理与操作链路，能够输出专业高保真可交互原型并转化为前端工程代码。",
+        skill_c1_i1: "User Flow (用户旅程流)",
+        skill_c1_i2: "Sitemap & 信息架构",
+        skill_c1_i3: "Interactive Prototyping (Figma)",
+        skill_c1_i4: "认知人机工学 (Cognitive Ergonomics)",
+        skill_c1_i5: "Usability 可用性启发式评估",
+        skill_c1_i6: "Design Systems (设计规范构建)",
+
+        skill_col2_title: "Web & 全栈工程开发",
+        skill_col2_sub: "核心技术栈 · 规范工程实践",
+        skill_col2_desc: "掌握现代主流前后端框架，注重代码可读性、状态管理、模块化拆分与接口契约。",
+        skill_c2_i1: "JavaScript (ES6+) & TypeScript 基础",
+        skill_c2_i2: "Vue.js & React 响应式开发",
+        skill_c2_i3: "Node.js (Express) 后端服务",
+        skill_c2_i4: "FastAPI (Python) 异步微服务",
+        skill_c2_i5: "RESTful API 规范设计与联调",
+        skill_c2_i6: "原生 HTML5 / 语义化 CSS (Flex/Grid)",
+
+        skill_col3_title: "数据系统、IoT 与运维部署",
+        skill_col3_sub: "底层支撑 · 稳定可靠交付",
+        skill_col3_desc: "具备关系型与时序型数据库应用能力，熟悉物联网消息协议与标准容器化编排。",
+        skill_c3_i1: "MySQL (表结构与事务逻辑)",
+        skill_c3_i2: "InfluxDB (时序数据管理与存储)",
+        skill_c3_i3: "MQTT 消息队列与设备数据采集",
+        skill_c3_i4: "Docker 容器化与服务打包",
+        skill_c3_i5: "Git 协作与版本管控",
+        skill_c3_i6: "Cloud Services & 接口部署",
+
+        lang_label: "🗣️ 语言工作能力：",
+        lang_zh: "中文 · 母语 (Native)",
+        lang_en: "英语 · 流利无障碍 (Fluent - 工作语言)",
+        lang_pt: "葡萄牙语 · 日常与基础技术沟通 (B1)",
+
+        // Education & Certifications
+        edu_sec_title: "教育背景与学术成果 (EDUCATION & DEGREE)",
+        edu_sec_sub: "结合顶级工程学院与媒体艺术设计学院的双重学术积淀",
+        edu_m_time: "2025 – 预计 2027",
+        edu_m_status: "在读 (硕士)",
+        edu_m_school: "米尼奥大学 (University of Minho)",
+        edu_m_degree: "信息工程硕士 (M.Sc. in Informatics Engineering)",
+        edu_m_loc: "📍 葡萄牙布拉加 / 吉马良斯",
+        edu_m_desc: "专注于软件工程、物联网架构及数据可视化系统研究。主导 UrbMobSense 城市微出行物联网课题。",
+
+        edu_b_time: "2021 – 2024",
+        edu_b_status: "已毕业 (学士)",
+        edu_b_school: "波尔图理工学院 (Polytechnic Institute of Porto - P.PORTO)",
+        edu_b_degree: "网络信息系统与技术学士 (B.Sc. in Web Information Systems and Technologies)",
+        edu_b_loc: "📍 葡萄牙波尔图 · ESMAD (Escola Superior de Media Artes e Design) 传媒艺术与设计学院",
+        edu_b_desc: "系统接受计算机技术与人机交互双重培养，涵盖高级原型设计、认知人机工学、云服务接口、移动计算等。",
+        edu_b_hl_title: "代表性高分课程成果：",
+        course_proj: "毕业设计与实习 15/20",
+        course_mobile: "移动与普适计算 15/20",
+        course_cloud: "云服务与接口 14/20",
+        course_ergo: "认知人机工学与交互设计 13/20",
+        course_proto: "数字平台高级原型 11/20",
+
+        cert_title_pt: "波尔图理工学院官方学业成绩认证 (Certidão Oficial P.PORTO)",
+        cert_note_pt: "已核验波尔图理工学院官方印章与学术档案 (2024年8月签发 · PDF)",
+        btn_view_cert_pt: "查看官方认证 PDF ↗",
+
+        cert_title_cn: "中国教育部留学服务中心 (CSCSE) 国(境)外学历学位认证书",
+        cert_note_cn: "教育部留服中心权威核验认证书 (中国留学网官方认证 · JPG)",
+        btn_view_cert_cn: "查看中留服认证 JPG ↗",
+
+        // Footer
+        footer_motto: "致力于创造兼具优雅交互体验与扎实工程架构的 Web 与数字系统。",
+        footer_email: "邮箱：",
+        footer_wechat: "微信：",
+        footer_phone: "电话：",
+        footer_back_top: "回到顶部 ↑",
+        footer_copy: "© 2025-2026 陈俊清 (Junqing Chen). 纯原生 HTML/CSS/JS 构建 · 适配多端响应式体验",
+
+        // Contact Modal
+        modal_title: "与我取得联系 (Get In Touch)",
+        modal_sub: "欢迎随时通过以下通道探讨实习、工作或技术合作机会：",
+        ch_intl: "国际 / 欧洲通道 (Europe & Remote)",
+        ch_email_lbl: "电子邮箱：",
+        ch_phone_lbl: "国际电话：",
+        ch_loc_lbl: "所在地：",
+        ch_loc_val: "Viana do Castelo, Portugal",
+        ch_cn: "中国国内通道 (China Domestic)",
+        ch_wechat_lbl: "微信号：",
+        ch_cnphone_lbl: "手机号码：",
+        ch_cnphone_hint: "(仅支持短信 / SMS only)",
+        ch_pref_lbl: "工作方式：",
+        ch_pref_val: "国内远程 / 现场工作机会均可探讨",
+        btn_copy: "复制",
+        btn_copy_wechat: "复制微信",
+        btn_copy_phone: "复制号码",
+        btn_done: "完成",
+        toast_copied: "已复制: "
+    },
+
+    // ------------------------------------------------------------------------
+    // 英语 (English)
+    // ------------------------------------------------------------------------
+    en: {
+        page_title: "Junqing Chen | Full-Stack Developer & Interaction Engineer",
+        page_description: "Portfolio & CV of Junqing Chen - Full-Stack Developer & Interaction Engineer bridging UX/UI design, full-stack web engineering, and IoT systems.",
+        status_available: "Open to Roles (Intern / Full-Time · EU/CN/Remote)",
+        nav_about: "About",
+        nav_projects: "Projects",
+        nav_skills: "Capabilities",
+        nav_education: "Education",
+        nav_contact: "Contact",
+        btn_contact: "Get in Touch",
+
+        // Hero
+        hero_greeting: "HELLO, I'M",
+        hero_name: "Junqing Chen",
+        hero_en_name: "FULL-STACK & INTERACTION ENGINEER",
+        hero_lead: "<strong>Full-Stack Developer & Interaction Engineer</strong><br>Currently based in Viana do Castelo, Portugal. M.Sc. student at University of Minho, B.Sc. graduate from ESMAD - School of Media Arts and Design (Polytechnic Institute of Porto).",
+        hero_sub: "Delivering end-to-end solutions: from user research and interactive prototyping to frontend components, backend APIs, and containerized deployment.",
+        hero_tag_loc: "📍 Viana do Castelo, Portugal / China",
+        hero_tag_roles: "🎯 Full-Stack / Backend / Frontend / Web UI",
+        hero_tag_lang: "🌐 Chinese (Native) / English (Fluent) / Portuguese (B1)",
+
+        // Projects Section
+        proj_sec_title: "FEATURED ENGINEERING PROJECTS",
+        proj_sec_sub: "Spanning IoT telemetry processing, enterprise reservation platform, and agile financial systems",
+
+        // P1: UrbMobSense
+        p1_badge: "Master's Team Project · Jul 2026 - Present · SCI Paper Under Review",
+        p1_title: "UrbMobSense: Urban Micromobility IoT Monitoring Platform",
+        p1_desc: "<strong>Tech Stack:</strong> FastAPI, MQTT, InfluxDB, Python, Docker, Web Dashboard<br>Decoupling telemetry ingestion, backend services, time-series storage, and visualization for reliable urban micromobility operations.",
+        p1_point1: "<strong>Team Collaboration & Modular Architecture:</strong> Serving as a core full-stack developer in an academic team; decoupled high-velocity telemetry ingestion from core business logic, boosting maintainability and horizontal scalability.",
+        p1_point2: "<strong>High-Throughput Ingestion Pipeline:</strong> Implemented MQTT telemetry stream processing with FastAPI and InfluxDB for optimized time-series persistence.",
+        p1_point3: "<strong>Device Simulation & Docker:</strong> Built Python sensor simulator scripts and threshold alert engines; containerized entire multi-service suite with Docker.",
+        p1_point4: "<strong>Academic Contribution:</strong> Authored platform architecture and methodology; manuscript officially submitted to an SCI-indexed journal (currently under peer review).",
+        p1_tag1: "📡 MQTT Telemetry",
+        p1_tag2: "📈 InfluxDB Time-Series",
+        p1_tag3: "⚡ FastAPI Async Engine",
+        p1_tag4: "🐳 Docker Orchestration",
+
+        // P2: Meal Booking
+        p2_badge: "Final-Year Capstone · 2024 (Grade: 15/20)",
+        p2_title: "Meal Booking & Operations Management Platform",
+        p2_desc: "<strong>Tech Stack:</strong> Vue.js, Node.js (RESTful APIs), MySQL, Web Components<br>End-to-end digital reservation and administration system for customers and business managers.",
+        p2_point1: "<strong>End-to-End Delivery:</strong> Independently executed database E-R modeling, REST API contracts, responsive client UI, and administrative backend.",
+        p2_point2: "<strong>Dual-Role Interaction:</strong> Built Vue.js admin dashboard and customer portal for dynamic menu management, reservation status lifecycle, and real-time reviews.",
+        p2_point3: "<strong>Data Consistency:</strong> Designed transactional business logic with Node.js and MySQL to prevent race conditions during peak booking hours.",
+        p2_tag1: "🖥️ Vue.js Adaptive Console",
+        p2_tag2: "🔌 Node.js RESTful APIs",
+        p2_tag3: "🗄️ MySQL Database",
+
+        // P3: Goodbuck
+        p3_badge: "Agile Team Project · 2024",
+        p3_title: "Goodbuck: Personal Finance & Asset Planning Application",
+        p3_desc: "<strong>Tech Stack:</strong> React, Node.js, MySQL, Git, Agile/Scrum<br>Modern responsive web application focused on personal income/expense workflows and asset planning.",
+        p3_point1: "<strong>Agile Collaboration:</strong> Active contributor in a Scrum team, participating in sprint planning, backlog grooming, and Git code reviews.",
+        p3_point2: "<strong>Core Asset Modules:</strong> Led development of RESTful endpoints and MySQL transactions for ledger management, category statistics, and data visualization.",
+        p3_point3: "<strong>Component-Driven UI:</strong> Built modular React components and responsive forms, providing smooth UX across desktop and mobile screens.",
+        p3_tag1: "⚛️ React Components",
+        p3_tag2: "📊 Financial Workflows",
+        p3_tag3: "🤝 Agile / Git Delivery",
+
+        // Capabilities / Skills
+        skills_sec_title: "END-TO-END DELIVERY CAPABILITIES",
+        skills_sec_sub: "Fusing ESMAD Design School training with Computer Engineering: from prototype to code & deployment",
+        skill_col1_title: "UX/UI & Product Interaction",
+        skill_col1_sub: "Design School Background · ESMAD Trained",
+        skill_col1_desc: "Deeply understanding user cognitive workflows; creating high-fidelity prototypes and translating them into production-ready frontends.",
+        skill_c1_i1: "User Flows & Journey Mapping",
+        skill_c1_i2: "Sitemaps & Information Architecture",
+        skill_c1_i3: "Interactive Prototyping (Figma)",
+        skill_c1_i4: "Cognitive Ergonomics & Interaction",
+        skill_c1_i5: "Usability & Heuristic Evaluation",
+        skill_c1_i6: "Design Systems & Tokens",
+
+        skill_col2_title: "Web & Full-Stack Development",
+        skill_col2_sub: "Core Engineering Stack · Clean Code",
+        skill_col2_desc: "Proficient with modern web ecosystems; emphasizing clean modular architecture, state predictability, and API contracts.",
+        skill_c2_i1: "JavaScript (ES6+) & TypeScript Basics",
+        skill_c2_i2: "Vue.js & React Applications",
+        skill_c2_i3: "Node.js (Express) Services",
+        skill_c2_i4: "FastAPI (Python) Microservices",
+        skill_c2_i5: "RESTful API Design & Integration",
+        skill_c2_i6: "Semantic HTML5 & Modern CSS (Grid/Flex)",
+
+        skill_col3_title: "Data, IoT & DevOps Infrastructure",
+        skill_col3_sub: "Reliable Systems · Production Ready",
+        skill_col3_desc: "Experienced with relational & time-series storage, IoT streaming protocols, and standard containerization pipelines.",
+        skill_c3_i1: "MySQL (Schema & Transactions)",
+        skill_c3_i2: "InfluxDB (Time-Series Telemetry)",
+        skill_c3_i3: "MQTT Telemetry & Broker Integration",
+        skill_c3_i4: "Docker Containerization",
+        skill_c3_i5: "Git Collaboration & CI/CD Basics",
+        skill_c3_i6: "Cloud Services & API Deployment",
+
+        lang_label: "🗣️ Working Languages:",
+        lang_zh: "Chinese · Native",
+        lang_en: "English · Fluent (Working Language)",
+        lang_pt: "Portuguese · B1 (Daily & Technical Communication)",
+
+        // Education & Certifications
+        edu_sec_title: "EDUCATION & ACADEMIC CREDENTIALS",
+        edu_sec_sub: "Dual academic foundation: Top engineering institution + Renowned school of media arts and design",
+        edu_m_time: "2025 – Expected 2027",
+        edu_m_status: "Enrolled (Master's)",
+        edu_m_school: "University of Minho (Universidade do Minho)",
+        edu_m_degree: "M.Sc. in Informatics Engineering",
+        edu_m_loc: "📍 Braga / Guimarães, Portugal",
+        edu_m_desc: "Focusing on software engineering, IoT telemetry platforms, and data visualization. Leading the UrbMobSense micromobility project.",
+
+        edu_b_time: "2021 – 2024",
+        edu_b_status: "Graduated (Bachelor's)",
+        edu_b_school: "Polytechnic Institute of Porto (P.PORTO)",
+        edu_b_degree: "B.Sc. in Web Information Systems and Technologies",
+        edu_b_loc: "📍 Porto, Portugal · ESMAD (School of Media Arts and Design)",
+        edu_b_desc: "Rigorous dual education in computer technologies and human-computer interaction, covering advanced prototyping, usability, cloud interfaces, and mobile computing.",
+        edu_b_hl_title: "Representative Coursework & High Marks:",
+        course_proj: "Final Project & Placement: 15/20",
+        course_mobile: "Mobile & Ubiquitous Computing: 15/20",
+        course_cloud: "Cloud Services & Interfaces: 14/20",
+        course_ergo: "Cognitive Ergonomics & Interaction: 13/20",
+        course_proto: "Advanced Prototyping: 11/20",
+
+        cert_title_pt: "Official Degree Certificate & Transcript (Certidão Oficial P.PORTO)",
+        cert_note_pt: "Authenticated with P.PORTO official seal and academic records (Issued Aug 2024 · PDF)",
+        btn_view_cert_pt: "View Official PDF ↗",
+
+        cert_title_cn: "Chinese Ministry of Education (CSCSE) Overseas Credential Recognition",
+        cert_note_cn: "Official foreign degree verification issued by Chinese Service Center for Scholarly Exchange (JPG)",
+        btn_view_cert_cn: "View CSCSE Credential JPG ↗",
+
+        // Footer
+        footer_motto: "Dedicated to crafting web systems that combine elegant interaction design with robust software engineering.",
+        footer_email: "Email: ",
+        footer_wechat: "WeChat: ",
+        footer_phone: "Phone: ",
+        footer_back_top: "Back to top ↑",
+        footer_copy: "© 2025-2026 Junqing Chen. Pure Vanilla HTML/CSS/JS · Responsive & Lightweight",
+
+        // Contact Modal
+        modal_title: "Get in Touch",
+        modal_sub: "Feel free to reach out to discuss internship, full-time, or technical collaboration opportunities:",
+        ch_intl: "International / European Channel (Europe & Remote)",
+        ch_email_lbl: "Email:",
+        ch_phone_lbl: "Phone (PT):",
+        ch_loc_lbl: "Location:",
+        ch_loc_val: "Viana do Castelo, Portugal",
+        ch_cn: "China Domestic Channel",
+        ch_wechat_lbl: "WeChat:",
+        ch_cnphone_lbl: "Phone (CN):",
+        ch_cnphone_hint: "(SMS only)",
+        ch_pref_lbl: "Preferences:",
+        ch_pref_val: "Open to both remote and on-site opportunities",
+        btn_copy: "Copy",
+        btn_copy_wechat: "Copy WeChat",
+        btn_copy_phone: "Copy Number",
+        btn_done: "Done",
+        toast_copied: "Copied: "
+    },
+
+    // ------------------------------------------------------------------------
+    // 葡萄牙语 (Português)
+    // ------------------------------------------------------------------------
+    pt: {
+        page_title: "Junqing Chen | Engenheiro Full-Stack & Designer de Interação",
+        page_description: "Portfólio e CV de Junqing Chen - Engenheiro de Software Full-Stack e Designer de Interação com competências em prototipagem, desenvolvimento web e sistemas IoT.",
+        status_available: "Disponível (Estágio / Full-Time · UE/CN/Remoto)",
+        nav_about: "Sobre",
+        nav_projects: "Projetos",
+        nav_skills: "Competências",
+        nav_education: "Educação",
+        nav_contact: "Contacto",
+        btn_contact: "Contactar",
+
+        // Hero
+        hero_greeting: "OLÁ, SOU",
+        hero_name: "Junqing Chen",
+        hero_en_name: "ENGENHEIRO FULL-STACK & DESIGNER DE INTERAÇÃO",
+        hero_lead: "<strong>Engenheiro Full-Stack & Designer de Interação</strong><br>Atualmente residente em Viana do Castelo, Portugal. Mestrando em Engenharia Informática na Universidade do Minho, Licenciado pela ESMAD (P.PORTO).",
+        hero_sub: "Capacidade de entrega de ciclo completo: da pesquisa de utilizador e prototipagem interativa à implementação de componentes frontend, APIs backend e orquestração com Docker.",
+        hero_tag_loc: "📍 Viana do Castelo, Portugal / China",
+        hero_tag_roles: "🎯 Full-Stack / Backend / Frontend / UI Web",
+        hero_tag_lang: "🌐 Chinês (Nativo) / Inglês (Fluente) / Português (B1)",
+
+        // Projects Section
+        proj_sec_title: "PROJETOS DE ENGENHARIA SELECIONADOS",
+        proj_sec_sub: "Telemetria IoT em tempo real, plataforma de reservas full-stack e sistemas financeiros ágeis",
+
+        // P1: UrbMobSense
+        p1_badge: "Projeto de Mestrado em Equipa · Julho de 2026 - Presente · Artigo SCI em Revisão",
+        p1_title: "UrbMobSense: Plataforma IoT de Monitorização de Micromobilidade Urbana",
+        p1_desc: "<strong>Tecnologias:</strong> FastAPI, MQTT, InfluxDB, Python, Docker, Dashboard Web<br>Arquitetura modular desacoplando ingestão de dados, serviços backend, armazenamento temporal e visualização de métricas.",
+        p1_point1: "<strong>Colaboração em Equipa e Arquitetura Modular:</strong> Integrante central da equipa de desenvolvimento full-stack; desacoplamento da ingestão de telemetria dos serviços de negócio centrais, aumentando manutenibilidade e escalabilidade.",
+        p1_point2: "<strong>Pipeline de Ingestão de Alto Débito:</strong> Receção de fluxos MQTT via FastAPI e persistência de dados temporais de larga escala com InfluxDB.",
+        p1_point3: "<strong>Simulação e Docker:</strong> Desenvolvimento de scripts em Python para emulação de sensores e motor de alertas; orquestração de múltiplos serviços em Docker.",
+        p1_point4: "<strong>Contribuição Académica:</strong> Metodologia e arquitetura documentadas; manuscrito submetido para revista indexada no SCI (atualmente em revisão por pares).",
+        p1_tag1: "📡 Telemetria MQTT",
+        p1_tag2: "📈 InfluxDB Séries Temporais",
+        p1_tag3: "⚡ FastAPI Assíncrono",
+        p1_tag4: "🐳 Orquestração Docker",
+
+        // P2: Meal Booking
+        p2_badge: "Projeto Final de Licenciatura · 2024 (Nota: 15/20)",
+        p2_title: "Plataforma de Reservas e Gestão de Restauração",
+        p2_desc: "<strong>Tecnologias:</strong> Vue.js, Node.js (RESTful APIs), MySQL, Web Components<br>Sistema integrado de reservas e administração para clientes e operadores de restauração.",
+        p2_point1: "<strong>Entrega Ponta a Ponta:</strong> Modelação da base de dados, especificação de APIs RESTful, interface web para clientes e painel administrativo.",
+        p2_point2: "<strong>Interação Multifuncional:</strong> Painel em Vue.js para gestão dinâmica de ementas, controlo de estados de reserva e feedback em tempo real.",
+        p2_point3: "<strong>Consistência e Fiabilidade:</strong> Lógica transacional com Node.js e MySQL, assegurando integridade de dados durante períodos de elevada concorrência.",
+        p2_tag1: "🖥️ Painel Adaptativo em Vue.js",
+        p2_tag2: "🔌 APIs RESTful em Node.js",
+        p2_tag3: "🗄️ Base de Dados MySQL",
+
+        // P3: Goodbuck
+        p3_badge: "Projeto de Equipa em Scrum · 2024",
+        p3_title: "Goodbuck: Aplicação de Gestão Financeira Pessoal",
+        p3_desc: "<strong>Tecnologias:</strong> React, Node.js, MySQL, Git, Agile/Scrum<br>Aplicação web moderna e responsiva vocacionada para planeamento orçamental e gestão de ativos.",
+        p3_point1: "<strong>Colaboração Ágil:</strong> Participação ativa em equipa Scrum, com planeamento de sprints, refinamento de requisitos e revisões de código via Git.",
+        p3_point2: "<strong>Módulos Centrais:</strong> Implementação de endpoints RESTful e transações MySQL para gestão de contas, categorização de despesas e relatórios estatísticos.",
+        p3_point3: "<strong>Interface Baseada em Componentes:</strong> Criação de componentes modulares em React com validações responsivas para computador e telemóvel.",
+        p3_tag1: "⚛️ Componentes React",
+        p3_tag2: "📊 Gestão Financeira",
+        p3_tag3: "🤝 Metodologia Ágil / Git",
+
+        // Capabilities / Skills
+        skills_sec_title: "CAPACIDADE DE ENTREGA DE CICLO COMPLETO",
+        skills_sec_sub: "União entre a formação em Design na ESMAD e a Engenharia Informática: do protótipo ao código e deployment",
+        skill_col1_title: "UX/UI & Design de Interação",
+        skill_col1_sub: "Diferencial de Formação · Formado na ESMAD",
+        skill_col1_desc: "Compreensão aprofundada da experiência do utilizador; conceção de protótipos de alta fidelidade e conversão em código frontend robusto.",
+        skill_c1_i1: "User Flows e Mapeamento de Jornada",
+        skill_c1_i2: "Sitemaps e Arquitetura de Informação",
+        skill_c1_i3: "Prototipagem Interativa (Figma)",
+        skill_c1_i4: "Ergonomia Cognitiva e Design de Interação",
+        skill_c1_i5: "Avaliação Heurística e Usabilidade",
+        skill_c1_i6: "Sistemas de Design (Design Systems)",
+
+        skill_col2_title: "Desenvolvimento Web & Full-Stack",
+        skill_col2_sub: "Stack Tecnológico Central · Boas Práticas",
+        skill_col2_desc: "Domínio de frameworks modernos, dando primazia à legibilidade de código, arquitetura modular e contratos de API.",
+        skill_c2_i1: "JavaScript (ES6+) e Fundamentos de TypeScript",
+        skill_c2_i2: "Aplicações em Vue.js e React",
+        skill_c2_i3: "Serviços Backend em Node.js (Express)",
+        skill_c2_i4: "Microsserviços em FastAPI (Python)",
+        skill_c2_i5: "Desenho e Integração de APIs RESTful",
+        skill_c2_i6: "HTML5 Semântico e CSS Moderno (Flex/Grid)",
+
+        skill_col3_title: "Sistemas de Dados, IoT & DevOps",
+        skill_col3_sub: "Infraestrutura Sólida · Entrega Fiável",
+        skill_col3_desc: "Experiência em bases de dados relacionais e temporais, protocolos de telemetria IoT e empacotamento com Docker.",
+        skill_c3_i1: "MySQL (Modelação e Transações)",
+        skill_c3_i2: "InfluxDB (Dados Temporais IoT)",
+        skill_c3_i3: "Protocolo MQTT e Ingestão de Sensores",
+        skill_c3_i4: "Contentorização com Docker",
+        skill_c3_i5: "Controlo de Versões com Git",
+        skill_c3_i6: "Serviços Cloud e Deploy de Interfaces",
+
+        lang_label: "🗣️ Línguas de Trabalho:",
+        lang_zh: "Chinês · Nativo",
+        lang_en: "Inglês · Fluente (Língua de trabalho)",
+        lang_pt: "Português · B1 (Comunicação diária e técnica)",
+
+        // Education & Certifications
+        edu_sec_title: "FORMAÇÃO ACADÉMICA E CERTIFICAÇÕES",
+        edu_sec_sub: "Combinação académica: Instituição de topo em Engenharia + Escola de referência em Artes e Design",
+        edu_m_time: "2025 – Previsto 2027",
+        edu_m_status: "A Frequentar (Mestrado)",
+        edu_m_school: "Universidade do Minho",
+        edu_m_degree: "Mestrado em Engenharia Informática",
+        edu_m_loc: "📍 Braga / Guimarães, Portugal",
+        edu_m_desc: "Investigação orientada para engenharia de software, plataformas de telemetria IoT e visualização de dados. Responsável pelo projeto UrbMobSense.",
+
+        edu_b_time: "2021 – 2024",
+        edu_b_status: "Concluído (Licenciatura)",
+        edu_b_school: "Instituto Politécnico do Porto (P.PORTO)",
+        edu_b_degree: "Licenciatura em Tecnologias e Sistemas de Informação para a Web",
+        edu_b_loc: "📍 Porto, Portugal · ESMAD (Escola Superior de Media Artes e Design)",
+        edu_b_desc: "Formação multidisciplinar em tecnologias web e interação pessoa-máquina: prototipagem avançada, ergonomia cognitiva, computação móvel e serviços cloud.",
+        edu_b_hl_title: "Unidades Curriculares em Destaque:",
+        course_proj: "Projeto Final / Estágio: 15/20 (23 ECTS)",
+        course_mobile: "Computação Móvel e Ubíqua: 15/20",
+        course_cloud: "Serviços e Interfaces para a Cloud: 14/20",
+        course_ergo: "Ergonomia Cognitiva e Design de Interação: 13/20",
+        course_proto: "Prototipagem Avançada: 11/20",
+
+        cert_title_pt: "Certidão Oficial de Conclusão e Unidades Curriculares (P.PORTO)",
+        cert_note_pt: "Autenticada com selo branco do Instituto Politécnico do Porto (Emitida em Agosto de 2024 · PDF)",
+        btn_view_cert_pt: "Ver Certidão Oficial PDF ↗",
+
+        cert_title_cn: "Reconhecimento Oficial de Grau do Ministério da Educação da China (CSCSE)",
+        cert_note_cn: "Certificado emitido pelo Centro de Serviços de Intercâmbio Académico da China (JPG)",
+        btn_view_cert_cn: "Ver Reconhecimento CSCSE JPG ↗",
+
+        // Footer
+        footer_motto: "Dedicado a conceber sistemas digitais que combinam experiências de interação refinadas com engenharia de software sólida.",
+        footer_email: "Email: ",
+        footer_wechat: "WeChat: ",
+        footer_phone: "Telefone: ",
+        footer_back_top: "Voltar ao topo ↑",
+        footer_copy: "© 2025-2026 Junqing Chen. Desenvolvido em HTML/CSS/JS nativo · Responsivo e Leve",
+
+        // Contact Modal
+        modal_title: "Entrar em Contacto",
+        modal_sub: "Disponível para discutir oportunidades de estágio, contrato de trabalho ou colaborações técnicas:",
+        ch_intl: "Canal Internacional / Europa (Europa & Remoto)",
+        ch_email_lbl: "Email:",
+        ch_phone_lbl: "Telefone (PT):",
+        ch_loc_lbl: "Localização:",
+        ch_loc_val: "Viana do Castelo, Portugal",
+        ch_cn: "Canal China",
+        ch_wechat_lbl: "WeChat:",
+        ch_cnphone_lbl: "Telefone (CN):",
+        ch_cnphone_hint: "(Apenas SMS)",
+        ch_pref_lbl: "Modalidade:",
+        ch_pref_val: "Aberto a regime presencial ou remoto",
+        btn_copy: "Copiar",
+        btn_copy_wechat: "Copiar WeChat",
+        btn_copy_phone: "Copiar Número",
+        btn_done: "Fechar",
+        toast_copied: "Copiado: "
+    }
+};
